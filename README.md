@@ -36,3 +36,20 @@ This project follows Terraform best practices by separating:
 
 ## 📂 Project Structure
 
+---
+
+## ⚙️ Prerequisites
+
+Before running this project, ensure you have:
+
+- AWS Account
+- AWS CLI installed and configured
+- Terraform installed
+- IAM user with required permissions
+
+---
+
+## 🔐 AWS Configuration
+
+Configure AWS credentials using AWS ClI
+
