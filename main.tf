@@ -1,12 +1,13 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = var.aws_region
 }
 
 resource "aws_instance" "demo" {
-  ami           = "ami-0f58b397bc5c1f2e8"
-  instance_type = "t2.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  key_name      = var.key_name
 
   tags = {
-    Name = "Terraform-EC2"
+    Name = var.instance_name
   }
 }
